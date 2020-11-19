@@ -1,5 +1,5 @@
-from .Account import Account
-from .Bank import Bank
+from atm.Account import Account
+from atm.Bank import Bank
 
 bank = Bank()
 bank.add_account( Account("John", 1, 100.23, 1234) )

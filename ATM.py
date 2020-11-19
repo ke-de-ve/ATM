@@ -1,11 +1,12 @@
-from Account import Account
-from Bank import Bank
+from atm.Account import Account
+from atm.Bank import Bank
 
 bank = Bank()
-bank.add_account( Account("John", 1, 100.23, 1234) )
-bank.add_account( Account("Mary", 2, 200.12, 1234) )
+a = Account("John", 1, 100.23, 1234)
+bank.add_account(a)
+bank.add_account(Account("Mary", 2, 200.12, 1234))
 
-current = Account()
+current = None
 cmd = 111
 while cmd != "0":
     if (current != None):
@@ -17,8 +18,13 @@ while cmd != "0":
 
     # add account
     if (cmd == "1"):
-        print("adding account...  what is your name?") 
+        print("adding account...  what is your name?")
         name = str(input())
+
+    # logout
+    if (cmd == "3"):
+        print("goodbye")
+        current = None
 
     # login
     if (cmd == "2"):
