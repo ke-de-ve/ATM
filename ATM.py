@@ -12,9 +12,9 @@ while cmd != "0":
     if (current != None):
         print("Hello,", current.name )
 
-    print( "1 - add account,  2 - login,  3 - logout, 4 - add funds, 5 - withdraw funds 6 - transfer,  0 - exit" )
+    print( "1 - add account,  2 - login,  3 - logout, 4 - show balance, 5 - add funds, 6 - withdraw funds, 7 - transfer,  0 - exit" )
     cmd = input() 
-    print("i got ", cmd)
+    #print("i got ", cmd)
 
     # add account
     if (cmd == "1"):
@@ -36,4 +36,8 @@ while cmd != "0":
         if (current == None):
             print("you don't have an account. Do you want to create one?")
 
+    if (cmd == "4"):
+        print("your balance is ", current.balance)
+
+    print("")
 
