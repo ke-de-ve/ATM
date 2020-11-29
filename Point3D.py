@@ -6,3 +6,15 @@
 # this object in the following format: (x, y, z). Outside the class definition, create a 
 # variable named my_point containing a new instance of Point3D with x=1, y=2, and z=3. 
 # Finally, print my_point.
+class Point3D:
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def __repr__(self):
+        return '(%d, %d, %d)' % (self.x, self.y, self.z)
+
+
+my_point = Point3D(1, 2, 3)
+print("my point is ",my_point)

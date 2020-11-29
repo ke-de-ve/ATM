@@ -94,5 +94,5 @@ while cmd != 0:
     print("")
     # for acc in bank.accounts:
     #     pprint(vars(acc))
-
+    #     print(acc)
 print("turning ATM off, good bye!")

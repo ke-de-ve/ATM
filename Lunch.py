@@ -18,3 +18,9 @@ class Lunch:
 # To check if it works define: Paul=Lunch("menu 1") and call Paul.menu_price().
 Paul=Lunch("menu 2") 
 Paul.menu_price()
+
+Paul=Lunch("menu 1")
+Paul.menu_price()
+
+Paul=Lunch("menu 3")
+Paul.menu_price()

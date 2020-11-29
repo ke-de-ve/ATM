@@ -5,6 +5,9 @@ class Account:
         self.balance = balance
         self.pin = pin
 
+    def __repr__(self):
+        return '(name: %s, account number: %d, balance: %f, pin: %d)' % (self.name, self.acc_number, self.balance, self.pin)
+
     # add funds to the account
     def deposit(self, sum_to_deposit):
         self.balance += sum_to_deposit
